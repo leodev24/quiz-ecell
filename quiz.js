@@ -2,6 +2,7 @@ var time=1;
 function generateQuiz(questions, quizcontainer, resultcontainer, submitbutton) {
     for (var k = 0; k < questions.length; k++) {
         shuffle(questions[k].answers);
+        shuffle(questions);
     }
     function showQuestions(questions, quizContainer) {
         // we'll need a place to store the output and the answer choices
@@ -54,7 +55,7 @@ function generateQuiz(questions, quizcontainer, resultcontainer, submitbutton) {
 }
 var myQuestions = [
     {
-        "question": "Que1-How many friends are there?",
+        "question": "Que-How many friends are there?",
         "answers": [
             '6',
             '7',
@@ -63,7 +64,7 @@ var myQuestions = [
         "correctAnswer": '6'
     },
     {
-        "question": "Que2-Who says the last line of the series?",
+        "question": "Que-Who says the last line of the series?",
         "answers": [
             'Chandler',
             'joey',
@@ -72,7 +73,7 @@ var myQuestions = [
         "correctAnswer": 'Chandler'
     },
     {
-        "question": "Que3-What is Rachel scared of?",
+        "question": "Que-What is Rachel scared of?",
         "answers": [
             'Swings',
             'Dog',
@@ -81,7 +82,7 @@ var myQuestions = [
         "correctAnswer": 'Swings'
     },
     {
-        "question": "Que4-How many times has Ross been married",
+        "question": "Que-How many times has Ross been married",
         "answers": [
             '4',
             '3',
@@ -91,7 +92,7 @@ var myQuestions = [
     }
     ,
     {
-        "question": "Que5-How many sisters does Joey have?",
+        "question": "Que-How many sisters does Joey have?",
         "answers": [
             '8',
             '7',
@@ -101,7 +102,7 @@ var myQuestions = [
     }
     ,
     {
-        "question": "Que6-which character has a twin?",
+        "question": "Que-which character has a twin?",
         "answers": [
             'phoebe',
             'Ross',
@@ -110,7 +111,7 @@ var myQuestions = [
         "correctAnswer": 'phoebe'
     },
     {
-        "question": "Que7-what is monica skilled at",
+        "question": "Que-what is monica skilled at",
         "answers": [
             'Dancing',
             'running',
